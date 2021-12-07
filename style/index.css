@@ -14,7 +14,9 @@ body{
     margin: 10px auto;
     width: 95%;
     min-width: 740px;
+    max-width: 1180px;
     font-size: 20px;
+    background: url(../img/bg.png);
 }
 
 a{
@@ -106,3 +108,11 @@ header nav img{
     text-transform: uppercase;
     margin-right: 2px;
 }
+
+.reserva a:hover{
+    color: #999165;
+    background-color: #eae0a8;
+}
+
+
+/*----------------------------------Topo----------------------------------*/
