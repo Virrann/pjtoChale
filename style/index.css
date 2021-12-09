@@ -8,6 +8,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Trebuchet;
+
+    order: 2;
 }
 
 body{
@@ -17,6 +19,8 @@ body{
     max-width: 1180px;
     font-size: 20px;
     background: url(../img/bg.png);
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -34,6 +38,7 @@ header{
     /*background-attachment: fixed;*/
     background-size: auto 310px;
     height: 300px;
+    order: 1;
 }
 
 #logoTop{
@@ -114,5 +119,88 @@ header nav img{
     background-color: #eae0a8;
 }
 
+footer{
+    color: #66603a;
+    text-align: center;
+    margin-top: 25px;
+    background-color: #fffcdd;
+    padding: 20px;
+}
 
-/*----------------------------------Topo----------------------------------*/
+footer h2{
+    font-size: 22px;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+/*----------------------------------Topo e Rodapé----------------------------------*/
+
+.conteudo{
+    background-color: #fffcdd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descricao{
+    padding: 20px;
+}
+
+.descricao h1{
+    color: #837d51;
+    font-size: 22px;
+}
+
+.descricao p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.apresentacao{
+    background-color: #f0ecc5;
+}
+
+.apresentacao>ul>li>a{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 15px 0;
+    border-top: solid 1px white;
+    grid-column-gap: 15px;
+    align-items: center;
+}
+
+.primeiro{
+    border: none;
+}
+
+.apresentacao>ul>li>a>img{
+    grid-column: 1/2;
+    display: inline-block;
+    width: 100%;
+}
+
+.apresentacao>ul>li>a>h2, .apresentacao>ul>li>a>p{
+    grid-column: 2/3;
+}
+
+.apresentacao a h2{
+    color: #66603a;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.apresentacao a h2:hover{
+    color: #ffffff;
+}
+
+.apresentacao a p{
+    color: #000;
+    font-size: 0.8em;
+}
+
+.apresentacao>ul>li{
+    width: 90%;
+    margin: auto;
+    /*border: solid 1px red;**/
+}
